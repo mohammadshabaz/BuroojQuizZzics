@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alamaanah.buroojquizzzics"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/quiz_icon"
+        android:label="QuizZzics Islamic Quiz"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.alamaanah.buroojquizzzics.HomeActivity"
+            android:label="QuizZzics Islamic Quiz "
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alamaanah.buroojquizzzics.TypesActivity"
+            android:label="Choose a Difficulty"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.alamaanah.buroojquizzzics.LevelsActivity"
+            android:label="Choose a Level"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.alamaanah.buroojquizzzics.QuizActivity"
+            android:label="Quiz"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.alamaanah.buroojquizzzics.AboutActivity"
+            android:label="@string/title_activity_about_brooj" >
+        </activity>
+    </application>
+
+</manifest>
